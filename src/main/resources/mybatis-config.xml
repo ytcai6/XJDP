@@ -5,15 +5,15 @@
 <configuration>
 
     <typeAliases>
-        <package name="com.itheima.pojo"/>
+        <package name="com.itcyt.pojo"/>
     </typeAliases>
 
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql:///db1?useSSL=false&amp;useServerPrepStmts=true"/>
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql:///project2?useSSL=false&amp;useServerPrepStmts=true"/>
                 <property name="username" value="root"/>
                 <property name="password" value="root"/>
             </dataSource>
@@ -21,6 +21,6 @@
     </environments>
     <mappers>
        <!--扫描mapper-->
-        <package name="com.itheima.mapper"/>
+        <package name="com.itcyt.mapper"/>
     </mappers>
 </configuration>
